@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1140px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0px 141.5px;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 52px;
+	background-color: #121517;
+}
+
+.nav-set {
+	width: 1076px;
+	height: 52px;
+	margin-left: 12px;
+	margin-right: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-brand {
+	color: white;
+	font-weight: 700;
+}
+
+.top-nav-link:hover {
+	color: white;
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.genderBtn {
+	background-color: #121517;
+	color: #868e96;
+	height: 52px;
+	font-size: 19px;
+	font-weight: 400;
+}
+
+.genderClickBtn {
+	color: #f23538;
+	font-weight: 700;
+	border-bottom: 4px solid #f23538;
+}
+
+.top-nav-link {
+	font-size: 11px;
+	font-weight: 600;
+	color: #f8fff8;
+}
+
+.div-line {
+	width: 1px;
+	height: 18px;
+	margin: 0px 7px;
+	background-color: #f8fff8;
+}
+
+.bottomNav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	top: 52px;
+	height: 52px;
+	background-color: #f1f3f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 52px;
+}
+
+.botNavMenu:hover {
+	color: black;
+}
+
+.botNavClickMenu:hover {
+	color: #f23538;
+}
+
+.botNavMenu {
+	font-weight: 600;
+	font-size: 13px;
+	color: black;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-right: 36px;
+	font-size: 13px;
+}
+
+.botNavClickMenu {
+	font-weight: 900;
+	font-size: 14px;
+	color: #f23538;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	margin-right: 36px;
+}
+
+.searchBox {
+	background-color: #dee2e6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 40px;
+}
+
+.searchSec {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	width: 398px;
+	height: 38px;
+	margin: 1px;
+}
+
+.checkBtnBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 97px;
+	height: 30px;
+	margin: 5px;
+}
+
+.checkBtn {
+	background-color: #f1f3f6;
+	width: 54px;
+	height: 30px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #868e96;
+	border-radius: 3px;
+}
+
+.checkClickBtn {
+	background-color: white;
+	color: #70a2f5;
+	border: 1px solid #70a2f5;
+}
+
+.searchFieldBox {
+	width: 218px;
+	height: 30px;
+	margin-left: 3px;
+	margin-right: 12px;
+}
+
+.searchField {
+	width: 218px;
+	height: 30px;
+	margin-right: 12px;
+	font-size: 14px;
+	border: 0px;
+	width: 218px;
+}
+
+.searchField::placeholder {
+	color: #b0b8c5;
+	font-weight: 600;
+}
+
+.searchField:focus {
+	outline: none;
+}
+
+.searchBtnBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 32px;
+	margin: 4px;
+}
+
+.searchBtn {
+	border-radius: 3px;
+	background-color: #4285f4;
+	font-size: 12px;
+	color: white;
+	font-weight: 700;
+	width: 50px;
+	height: 30px;
+}
+
+.aside {
+	float: left;
+	width: 82px;
+	margin-top: 148px;
+	margin-bottom: 20px;
+	padding-left: 12px;
+	text-align: left;
+}
+
+.aside, ul {
+	display: inline-block;
+}
+
+.categoryWrapper {
+	width: 82px;
+	margin-bottom: 28px;
+}
+
+.categoryWrapper, li {
+	list-style: none;
+}
+
+.sideCategory {
+	color: black;
+	font-size: 12px;
+}
+
+.sideCategory:hover {
+	color: black;
+	font-weight: 800;
+}
+
+.sideCategory:active {
+	color: #70a2f5;
+}
+
+.sidebarMain {
+	width: 82px;
+	height: 20px;
+	margin-bottom: 16px;
+}
+
+.tagMain {
+	font-weight: 800;
+	font-size: 14px;
+}
+
+.tagSub {
+	color: #868e96;
+	font-weight: 700;
+}
+
+.sidebarsub {
+	width: 82px;
+	height: 20px;
+	margin-bottom: 12px;
+}
