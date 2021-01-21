@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+.coordiCard {
+	height: 379px;
+	width: 270px;
+	margin-bottom: 40px;
+}
+
+.coordiCard_thumbnail {
+	z-index: -1;
+	position: relative;
+}
+
+.coordiCard_picture {
+	display : flex;
+	width: 270px;
+	height: 315px;
+	display: flex;
+}
+
+.coordiCard_picture-img {
+	background-color: #f9f9fa;
+	color: transparent;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+.coordiCard_like {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	padding: 0;
+	min-width: 53px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .2);
+	bottom: 8px;
+	right: 8px;
+	display: flex;
+	cursor: pointer;
+}
+
+.coordiCard_like-icon {
+	width: 16;
+	height: 16;
+	background-color: transparent;
+}
+
+.coordiCard_like-count {
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.coordiCard_title {
+	color: #343a40;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-top: 12px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.coordiCard_tags {
+	color: #97a0a8;
+	text-align: left;
+	height: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 14px;
+	margin-top: 6px;
+}
+
+.coordiCard_tag {
+	background-color: #f1f3f6;
+	color: #868e96;
+	font-size: 12px;
+	height: 20px;
+	border-radius: 1px;
+	margin-right: 8px;
+	padding: 1px 4px;
+}
+
+.coordiCard_tag:hover {
+	color: #868e96;
+}

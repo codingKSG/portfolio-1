@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.pagination_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.pagination_btn {
+	cursor: pointer;
+	text-align: center;
+	width: 28px;
+	height: 28px;
+	font-size: 14px;
+	margin: 0 8px 2px;
+	padding: 0;
+}
+
+.pagination_page {
+	color: #4285f4;
+	font-weight: 700;
+	border: 1px solid #4285f4;
+}
+
+.pagination_left {
+	color: #4285f4;
+}
+
+.pagination_right {
+	color: #4285f4;
+}

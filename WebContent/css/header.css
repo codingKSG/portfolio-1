@@ -10,7 +10,7 @@
 	margin: 0px 141.5px;
 }
 
-header {
+.header_navbar {
 	position: fixed;
 	display: flex;
 	justify-content: center;

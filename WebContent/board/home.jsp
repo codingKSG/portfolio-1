@@ -2,16 +2,13 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="../layout/foreign.jsp"%>
 	
-<link href="../layout/common.css" rel="stylesheet" type="text/css">
-<link href="../layout/header.css" rel="stylesheet" type="text/css">
-<link href="main.css" rel="stylesheet" type="text/css">
+<link href="../css/homePage.css" rel="stylesheet" type="text/css">
 
-</head>
 <%@ include file="../layout/header.jsp"%>
 
-<main class="main">
-	<div class="mainTitleBox">
-		<span class="mainTitle">상품랭킹</span> <a class="link main_more-box"
+<main class="home">
+	<div class="homeTitleBox">
+		<span class="homeTitle">상품랭킹</span> <a class="link home_more-box"
 			href="#"> 더보기 <i class="material-icons transparent">chevron_right</i>
 		</a>
 	</div>
@@ -42,20 +39,20 @@
 			</ul>
 		</section>
 	</section>
-	<div class="mainTitleBox">
-		<span class="mainTitle">인기코디</span> <a class="link main_more-box"
+	<div class="homeTitleBox">
+		<span class="homeTitle">인기코디</span> <a class="link home_more-box"
 			href="#"> 더보기 <i class="material-icons transparent">chevron_right</i>
 		</a>
 	</div>
 	<div>
-		<button type="button" class="mainTag mainTagClick">전체</button>
-		<button type="button" class="mainTag">데일리</button>
-		<button type="button" class="mainTag">훈남</button>
-		<button type="button" class="mainTag">캐쥬얼</button>
-		<button type="button" class="mainTag">커플</button>
+		<button type="button" class="homeTag homeTagClick">전체</button>
+		<button type="button" class="homeTag">데일리</button>
+		<button type="button" class="homeTag">훈남</button>
+		<button type="button" class="homeTag">캐쥬얼</button>
+		<button type="button" class="homeTag">커플</button>
 	</div>
-	<hr class="mainTagHr" />
-	<div class="mainCoordi">
+	<hr class="homeTagHr" />
+	<div class="homeCoordi">
 		<div class="coordiCard">
 			<div class="coordiCard_thumbnail">
 				<a href="#">
@@ -78,24 +75,20 @@
 			</div>
 		</div>
 	</div>
-	<div class="mainTitleBox">
-		<span class="mainTitle">쇼핑몰 순위</span> <a class="link main_more-box"
+	<div class="homeTitleBox">
+		<span class="homeTitle">쇼핑몰 순위</span> <a class="link home_more-box"
 			href="#"> 더보기 <i class="material-icons transparent">chevron_right</i>
 		</a>
 	</div>
-	<div class="main_stores">
-		<a class="main_store">
-			<div class="main_store-rank">순위</div>
-			<div class="main_store-picture">
-				<img class="main_store-img" src="#" />
+	<div class="home_stores">
+		<a class="home_store">
+			<div class="home_store-rank">순위</div>
+			<div class="home_store-picture">
+				<img class="home_store-img" src="#" />
 			</div>
-			<div class="main_store-name">스토어 이름</div>
+			<div class="home_store-name">스토어 이름</div>
 		</a>
 	</div>
 </main>
-</div>
 
-<footer class="footer"> </footer>
-</div>
-</body>
-</html>
+<%@ include file="../layout/footer.jsp"%>

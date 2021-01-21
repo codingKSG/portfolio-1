@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
+</head>
 <body>
 	<div class="App">
-		<header>
+		<header class="header_navbar">
 			<div class="nav-set">
 				<a class="navbar-brand" href="#">LOOKPIN</a>
 				<button class="genderBtn genderClickBtn" style="width: 52px;">MEN</button>
