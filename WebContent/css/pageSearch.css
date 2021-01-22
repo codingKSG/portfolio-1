@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.pageTitle_page-title {
+	font-weight: 700;
+	text-align: left;
+	color: #212529;
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+.searchBar_search {
+	display: flex;
+	align-items: center;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #212529;
+}
+
+.searchBar_input {
+	flex: 1 1;
+	height: 36px;
+	font-size: 22px;
+	line-height: 36px;
+	border: 0;
+	padding: 0 24px 0 6px;
+	text-rendering: auto;
+	cursor: text;
+	text-shadow: none;
+}
+
+.searchBar_input::placeholder {
+	color: #b0bfd6;
+}
+
+.searchBar_submit {
+	color: #fff;
+	background-color: #000;
+	cursor: pointer;
+	width: 70px;
+	height: 36px;
+	padding: 0;
+	font-weight: 600;
+}

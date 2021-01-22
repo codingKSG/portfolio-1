@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.stores_main {
+	display: block;
+	min-height: 100%;
+	width: 1000px;
+	height: 100%;
+	padding-bottom: 150px;
+	padding-top: 148px;
+	height: 100%;
+}
+
+.stores_shoppingmall {
+	text-align: left;
+}
+
+.shoppingmall {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-right: 100px;
+}
+
+.shoppingmall_title {
+	color: #212529;
+	width: 100%;
+	padding-bottom: 24px;
+	border-bottom: 1px solid #dee2e6;
+	font-size: 18px;
+	font-weight: 700;
+	height: 60px;
+}
+
+.storeRowWithRank {
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	height: 84px;
+	padding-top: 16px;
+	padding-bottom: 18px;
+}
+
+.storeRowWithRank_rank {
+	height: 50px;
+	width: 30px;
+}
+
+.storeRow_rand-rank {
+	height: 22px;
+	line-height: 22px;
+	font-size: 16px;
+	font-style: italic;
+	text-align: center;
+	color: #495057;
+}
+
+.storeRow_picture {
+	width: 48px;
+	height: 48px;
+	border-radius: 2px;
+	margin-left: 8px;
+}
+
+.storeRow_img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.storeRow_info {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	margin-left: 16px;
+	height: 48px;
+}
+
+.storeRow_name-message {
+	display: flex;
+	align-items: center;
+}
+
+.storeRowe_name {
+	height: 22px;
+	line-height: 22px;
+	font-size: 15px;
+	font-weight: 600;
+	color: #343a40;
+}
+
+.storeRowe_message {
+	height: 17px;
+	line-height: 17px;
+	font-size: 11px;
+	font-weight: 600;
+	color: #8da5cc;
+	margin-left: 6.2px;
+}
+
+.storeRow_tags {
+	height: 18px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #97a0a8;
+	text-align: left;
+	margin-top: 8px;
+}

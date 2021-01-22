@@ -24,6 +24,7 @@ button:focus {
 button {
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 input:focus {
@@ -34,7 +35,7 @@ input:focus {
 	outline-offset: 0px;
 }
 
-input[type="search" i] {
+input[type="search"] {
 	box-sizing: border-box;
 }
 
@@ -49,4 +50,18 @@ select:focus {
 
 select:visited {
 	outline: none;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+.link {
+	display: block;
+	text-decoration: none;
+	color: #343a40;
 }

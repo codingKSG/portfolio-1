@@ -9,10 +9,12 @@
 
 .pagination_btn {
 	cursor: pointer;
+    color: #b0b8bf;
 	text-align: center;
 	width: 28px;
 	height: 28px;
 	font-size: 14px;
+	font-weight:600;
 	margin: 0 8px 2px;
 	padding: 0;
 }

@@ -2,17 +2,17 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="../layout/foreign.jsp"%>
 
-<link href="../css/coordiPage.css" rel="stylesheet" type="text/css">
+<link href="../pageCss/coordiPage.css" rel="stylesheet" type="text/css">
 
 <%@ include file="../layout/header.jsp"%>
 
 <main class="coordi_main">
 	<header>
 		<div class="pageTitle_page-title">코디</div>
-		<div class="coordi_search">
-			<input class="coordi_input" placeholder=" 상품 및 태그 검색 (최대3개)"
-				type="search" value>
-			<button class="coordi_submit" type="button">검색</button>
+		<div class="searchBar_search">
+			<input class="searchBar_input" placeholder="상품 및 태그 검색 (최대3개)"
+				type="search" value="">
+			<button class="searchBar_submit" type="button">검색</button>
 		</div>
 	</header>
 
@@ -101,15 +101,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="pagination_wrapper">
-		<button class="pagination_btn pagination_left">
-			 <i class="material-icons">chevron_left</i>
-		</button>
-		<button class="pagination_btn pagination_page">1</button>
-		<button class="pagination_btn pagination_right">
-			 <i class="material-icons">chevron_right</i>
-		</button>
-	</section>
+	
+	<%@ include file="../layout/pagination.jsp"%>
 
 </main>
 

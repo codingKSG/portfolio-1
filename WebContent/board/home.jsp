@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="../layout/foreign.jsp"%>
 	
-<link href="../css/homePage.css" rel="stylesheet" type="text/css">
+<link href="../pageCss/homePage.css" rel="stylesheet" type="text/css">
 
 <%@ include file="../layout/header.jsp"%>
 
@@ -13,7 +13,7 @@
 		</a>
 	</div>
 	<section class="products">
-		<section class="productCard">
+		<section class="productCard_card">
 			<div class="productCard_thumbnail">
 				<a class="link" href="#">
 					<div class="productCard_picture">
