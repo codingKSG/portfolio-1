@@ -21,10 +21,38 @@ button:focus {
 	outline: none;
 }
 
+button:hover {
+	outline: none;
+}
+
+button:active {
+	outline: none;
+}
+
+button:visited {
+	outline: none;
+}
+
 button {
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
+
+[role='button']:hover {
+	outline: none;
+}
+
+[role='button']:active {
+	outline: none;
+}
+
+[role='button']:visited {
+	outline: none;
+}
+
+[role='button']:focus {
+	outline: none;
 }
 
 input:focus {
@@ -52,6 +80,19 @@ select:visited {
 	outline: none;
 }
 
+select:not(:-internal-list-box) {
+	overflow: visible !important;
+}
+
+select:disabled {
+	opacity: 0.7;
+	border-color: rgba(118, 118, 118, 0.3);
+}
+
+select:disabled {
+	color: -internal-light-dark(graytext, rgb(170, 170, 170));
+}
+
 ul {
 	list-style: none;
 }
@@ -64,4 +105,13 @@ li {
 	display: block;
 	text-decoration: none;
 	color: #343a40;
+}
+
+p {
+	margin-top: 6px !important;
+	margin-bottom: 6px !important;
+}
+
+option:disabled {
+	color: -internal-light-dark(graytext, rgb(170, 170, 170));
 }
