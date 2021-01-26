@@ -21,3 +21,12 @@ CREATE DATABASE lookpinDB;
 ```
 
 ## MySQL 테이블 생성
+
+```sql
+CREATE TABLE user (
+	id int primary key auto_increment,
+    email varchar(50) unique not null,
+	password varchar(20) not null,
+    phone varchar(15) unique not null
+);
+```

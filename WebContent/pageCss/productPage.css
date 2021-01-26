@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import url("../css/common.css");
-@import url("../css/header.css");
-@import url("../css/product.css");
-@import url("../css/productCard.css");
-@import url("../css/pagination.css");
+@import url("../css/layout/header.css");
+@import url("../css/board/product.css");
+@import url("../css/board/productCard.css");
+@import url("../css/board/pagination.css");
