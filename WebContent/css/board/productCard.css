@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 .productCard_card {
-	width: 180px;
-	height: 324px;
+	text-align: left;
+	background-color: #fff;
+	font-size: 16px;
 	margin-bottom: 80px;
-	border: 1px solid black;
+	width: 180px;
 }
 
 .productCard_thumbnail {
-	z-index: -1;
 	position: relative;
 	width: 180px;
 }
@@ -18,7 +18,6 @@
 	overflow: hidden;
 	height: 210px;
 	width: 180px;
-	height: 210px;
 }
 
 .productCard_picture-img {
@@ -34,8 +33,9 @@
 .productCard_store-name {
 	color: #97a0a8;
 	font-size: 12px;
-	font-weight: 500;
+	font-weight: 600;
 	height: 18px;
+	width: 180px;
 	line-height: 18px;
 }
 
@@ -43,8 +43,10 @@
 	color: #495057;
 	margin-top: 10px;
 	font-size: 14px;
+	font-weight: 600;
 	line-height: 20px;
 	height: 20px;
+	width: 180px;
 }
 
 .productCard_price_li {
@@ -64,6 +66,13 @@
 	font-size: 14px;
 	width: 75px;
 	height: 20px;
+	
+}
+
+.productCard_price, .productCard_product-name, .productCard_store-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .productCard_review {

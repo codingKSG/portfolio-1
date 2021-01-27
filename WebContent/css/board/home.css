@@ -1,19 +1,12 @@
 @charset "UTF-8";
 
 .home {
-	width: 985px;
 	display: block;
 	min-height: 100%;
-	height: 100%;
-	padding-left: 20px;
+	width: 1000px; height : 100%;
 	padding-bottom: 150px;
-	padding-top: 90px;
-	height: 100%;
-	padding-left: 20px;
-	padding-bottom: 150px;
-	padding-left: 20px;
-	padding-bottom: 150px;
-	padding-bottom: 150px;
+	height: 100%; padding-bottom : 150px;
+	padding-top: 100px;
 }
 
 .homeTitleBox {
@@ -42,8 +35,13 @@
 	color: #4285f4;
 }
 
-.homeTag {
-	height: 43px;
+.home_tags {
+	display: flex;
+	height: 45px;
+}
+
+.home_tag {
+	height: 45px;
 	font-size: 12px;
 	margin-right: 20px;
 	background-color: white;
@@ -74,8 +72,6 @@
 	height: 839px;
 	flex-wrap: wrap;
 }
-
-
 
 .home_stores {
 	display: flex;

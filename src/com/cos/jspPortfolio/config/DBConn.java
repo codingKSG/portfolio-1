@@ -8,7 +8,7 @@ import javax.sql.DataSource;
 
 public class DBConn {
 
-	public Connection getConnection() {
+	public static Connection getConnection() {
 		try {
 			Context initContext = new InitialContext();
 			Context envContext  = (Context)initContext.lookup("java:/comp/env");
