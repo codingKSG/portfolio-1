@@ -10,16 +10,16 @@ import com.cos.jspPortfolio.config.DBConn;
 
 public class ProductDao {
 	
-	
-	
-	public List<ProductCardDto> findTenByRatingText() {
+	public List<ProductCardDto> findTen() {
 		List<ProductCardDto> products = new ArrayList<>();
 		
-		StringBuffer sb = new StringBuffer();
-		sb.append("SELECT d.detailPage, p.productImg, s.storeName, p.productName, ");
-		sb.append("p.price, p.rating from product p inner join store s ");
-		sb.append("on p.storeId = s.id inner join detail d ");
-		sb.append("on p.detailId = d.id; ");
+		StringBuffer sb = new StringBuffer();		
+		sb.append("SELECT p2.id, p2.productImg, s.storeName, p2.productName, p2.price, p2.productType, ");
+		sb.append("(SELECT COUNT(r.ratingStar) FROM rating r ");
+		sb.append("INNER JOIN product p1 ON r.productId = p1.id WHERE p1.id = p2.id) AS rating, ");
+		sb.append("(SELECT AVG(r.ratingStar) FROM rating r ");
+		sb.append("INNER JOIN product p1 ON r.productId = p1.id WHERE p1.id = p2.id) AS ratingStar ");
+		sb.append("FROM product p2 INNER JOIN store s ON p2.storeId = s.id ORDER BY rating DESC");
 		
 		String sql = sb.toString();
 		
@@ -32,13 +32,17 @@ public class ProductDao {
 			rs = pstmt.executeQuery();
 			
 			while(rs.next()) {
+				double ratingStar = Math.round(rs.getDouble("ratingStar")*10)/10.0;
+				
 				ProductCardDto dto = ProductCardDto.builder()
-						.detailPage(rs.getString("d.detailPage"))
-						.productImg(rs.getString("p.productImg"))
+						.id(rs.getInt("p2.id"))
+						.productImg(rs.getString("p2.productImg"))
 						.storeName(rs.getString("s.storeName"))
-						.productName(rs.getString("p.productName"))
-						.price(rs.getString("p.price"))
+						.productName(rs.getString("p2.productName"))
+						.price(rs.getString("p2.price"))
+						.productType(rs.getString("p2.productType"))
 						.rating(rs.getInt("rating"))
+						.ratingStar(ratingStar)
 						.build();
 				
 				products.add(dto);
@@ -52,4 +56,6 @@ public class ProductDao {
 		
 		return null;
 	}
+	
+	
 }

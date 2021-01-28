@@ -69,7 +69,6 @@
 .homeCoordi {
 	display: flex;
 	justify-content: space-between;
-	height: 839px;
 	flex-wrap: wrap;
 }
 
@@ -112,6 +111,7 @@
 
 .home_store-name {
 	font-size: 12px;
+	font-weight: 600;
 	margin-top: 4px;
 	color: #495057;
 	text-align: left;

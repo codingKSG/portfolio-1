@@ -38,8 +38,9 @@
 						</li>
 							<li class="productCard_review">
 								<div class="productCard_star-icon">★</div>
-								<div class="productCard_satisfaction">평점</div>
-								<div class="productCard_total-count">${product.rating}원</div>
+								<div class="productCard_satisfaction">${product.ratingStar}</div>
+								<div class="productCard_total-count">(${product.rating}명
+									평가)</div>
 						</li>
 						</a>
 					</ul>
@@ -60,27 +61,32 @@
 		</div>
 		<hr class="homeTagHr" />
 		<div class="homeCoordi">
-			<div class="coordiCard">
-				<div class="coordiCard_thumbnail">
+			<c:forEach var="coordi" items="${coordis}">
+				<div class="coordiCard">
+					<div class="coordiCard_thumbnail">
+						<a href="#/${coordi.id}">
+							<div class="coordiCard_picture">
+								<img class="coordiCard_picture-img" src="${coordi.coordiImg}"
+									alt="" />
+							</div>
+						</a>
+						<button id="" class="coordiCard_like" type="button">
+							<i class="material-icons coordiCard_like-icon">thumb_up</i>
+							&nbsp; <span class="coordiCard_like-count">${coordi.coordiLike}</span>
+						</button>
+					</div>
 					<a href="#">
-						<div class="coordiCard_picture">
-							<img class="coordiCard_picture-img" src="" alt="" />
-						</div>
+						<div class="coordiCard_title">${coordi.coordiTitle}</div>
 					</a>
-					<button id="" class="coordiCard_like" type="button">
-						<i class="material-icons coordiCard_like-icon">thumb_up</i> &nbsp;
-						<span class="coordiCard_like-count">999</span>
-					</button>
+					<div class="coordiCard_tags">
+						<a class="coordiCard_tag" href="#">${coordi.tag1}</a> <a
+							class="coordiCard_tag" href="#">${coordi.tag2}</a> <a
+							class="coordiCard_tag" href="#">${coordi.tag3}</a> <a
+							class="coordiCard_tag" href="#">${coordi.tag4}</a>
+					</div>
 				</div>
-				<a href="#">
-					<div class="coordiCard_title">코디 타이틀</div>
-				</a>
-				<div class="coordiCard_tags">
-					<a class="coordiCard_tag" href="#">쇼핑몰</a> <a
-						class="coordiCard_tag" href="#">태그1</a> <a class="coordiCard_tag"
-						href="#">태그2</a> <a class="coordiCard_tag" href="#">태그3</a>
-				</div>
-			</div>
+
+			</c:forEach>
 		</div>
 		<div class="homeTitleBox">
 			<span class="homeTitle">쇼핑몰 순위</span> <a class="link home_more-box"
@@ -88,13 +94,15 @@
 			</a>
 		</div>
 		<div class="home_stores">
-			<a class="home_store">
-				<div class="home_store-rank">순위</div>
-				<div class="home_store-picture">
-					<img class="home_store-img" src="#" />
-				</div>
-				<div class="home_store-name">스토어 이름</div>
-			</a>
+			<c:forEach var="store" items="${stores}">
+				<a class="home_store">
+					<div class="home_store-rank">${store.storeRank}위</div>
+					<div class="home_store-picture">
+						<img class="home_store-img" src="${store.storeImg}" />
+					</div>
+					<div class="home_store-name">${store.storeName}</div>
+				</a>
+			</c:forEach>
 		</div>
 	</main>
 
